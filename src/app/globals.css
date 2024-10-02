@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --background: #ffffff;
+    --foreground: #171717;
+    --main-color:#00838F;
+    --main-bg:#19283F;
+  }
+  body.dark {
+    background-color:#111;
+    color:#bbb;
+  }
+  ::selection{
+    background-color:var(--main-color);
+    color:white;
+  }
+  @keyframes fadein {
+    0%,
+      
+      
+      100% {
+        transform: translateY(0px);
+      }
+     50%{
+        transform: translateY(-50px);
+      }
+  }
+  
+  .animate {
+    animation: fadein 3s ease-in-out infinite ;
+  }
+  .video{
+    background-image:url("../Images/forvideo.svg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+
+  }
+  .tocenter{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%)
+  }
+
+  .about{
+    background-image:url("../Images/Construction worker-bro.svg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+  }
+  ::-webkit-file-upload-button {
+    color: white;
+    background: var(--main-color);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 1px 0px 1px #6b4559;
+    outline: none;
+    padding: 10px 5px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    font-family: 'Libre Baskerville', serif;
+  }
+  ::-webkit-file-upload-button:hover {
+    background-color: rgb(0 131 143 / 31%);
+    color: black;
+  }
+  .uplaoding{
+    background-image:url("../Images/uploading.svg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position:center;
+  }
+  #bg{
+    background-image:url("../Images/back.jpeg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position:center;
+  }
+  table th,td{
+    padding: 10px 15px;
+
+}
+table td{
+  border:1px solid lightgray;
+
+}
+table th{
+  background: #0095A8;
+  color: white;
+  text-transform: capitalize;
+  font-family: "Libre Baskerville", serif;
+  border-top: none;
+
+}
+table tr{
+  transition: all 0.4s ease-in-out;
+    text-transform: capitalize;
+    font-size: 17px;
+    cursor: pointer; 
+}
+table tr:hover{
+  background-color: #eeeeee;
+      box-shadow: 0 2px 12px rgba(32,32,32,0.3);
+
+
+}
